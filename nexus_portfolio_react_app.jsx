@@ -18,8 +18,8 @@ function Navbar() {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-sm">
-          {['about','me','education','experience','projects','skills','contact'].map((item)=> (
-            <a key={item} href={`#${item}`} className="hover:text-blue-400 transition">
+          {['about','me','education','experience','projects','skills','contact us'].map((item)=> (
+            <a key={item} href={`#${item.replace(' ', '-')}`} className="hover:text-blue-400 transition">
               {item.toUpperCase()}
             </a>
           ))}
@@ -48,10 +48,10 @@ function Navbar() {
           className="md:hidden bg-black/95 border-t border-white/10"
         >
           <div className="flex flex-col space-y-4 px-6 py-4">
-            {['about','me','education','experience','projects','skills','contact'].map((item)=> (
+            {['about','me','education','experience','projects','skills','contact us'].map((item)=> (
               <a 
                 key={item} 
-                href={`#${item}`} 
+                href={`#${item.replace(' ', '-')}`} 
                 className="hover:text-blue-400 transition"
                 onClick={() => setIsOpen(false)}
               >
@@ -84,7 +84,7 @@ function Hero() {
             <a href="#projects" className="px-6 py-3 bg-blue-500 rounded-xl hover:scale-105 transition shadow-lg">
               Explore Work
             </a>
-            <a href="#contact" className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
+            <a href="#contact-us" className="px-6 py-3 border border-white/20 rounded-xl hover:bg-white hover:text-black transition">
               Hire Me
             </a>
           </div>
@@ -355,7 +355,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 px-6 bg-gray-950 text-white">
+    <section id="contact-us" className="py-28 px-6 bg-gray-950 text-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-6 text-center">Let's Work Together</h2>
         <p className="text-gray-400 text-center mb-12">Available for freelance & collaboration</p>
