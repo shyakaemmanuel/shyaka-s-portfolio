@@ -271,8 +271,8 @@ function Projects() {
     {
       title: "Nexus Social",
       desc: "Real-time social platform with live chat, notifications, and interactive feeds.",
-      link: "https://health-cert-app-eight.vercel.app/",
-      github: "https://github.com/shyakaemmanuel",
+      link: "https://nexus-social-tau.vercel.app/",
+      github: "https://github.com/shyakaemmanuel/nexus-social",
       tags: ["React", "Firebase", "Node.js", "Socket.io"]
     },
     {
